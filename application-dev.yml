@@ -1,1 +1,2 @@
-
+service:
+  name: service A dev environment
