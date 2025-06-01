@@ -1,0 +1,12 @@
+server:
+  port: 8084
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://your-auth-provider/.well-known/jwks.json
+
+  application:
+    name: smartim-user-service
