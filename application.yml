@@ -1,2 +1,10 @@
-service:
-  name: service A
+server:
+  error:
+    include-message: always
+
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+  profiles:
+    active: default
