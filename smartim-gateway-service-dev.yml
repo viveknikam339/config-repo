@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: inventory
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/inventory/**
