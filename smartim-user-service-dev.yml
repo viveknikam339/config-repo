@@ -16,4 +16,5 @@ spring:
     import: optional:configserver:http://localhost:8888
 
 jwt:
-  secret: your_jwt_secret_key
+  secret: my-super-secret-key-which-should-be-long-enough
+  expiration: 86400000 # 1 day in ms
