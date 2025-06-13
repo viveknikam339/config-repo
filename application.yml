@@ -1,10 +1,10 @@
-server:
-  error:
-    include-message: always
-
 spring:
-  jackson:
-    serialization:
-      indent_output: true
-  profiles:
-    active: default
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          timeout: 5
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG
