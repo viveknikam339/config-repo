@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user-service
+    name: smartim-user-service
   datasource:
     url: jdbc:mysql://localhost:3306/smartim_user_db
     username: root
