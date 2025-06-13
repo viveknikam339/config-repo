@@ -14,6 +14,8 @@ spring:
     show-sql: true
   config:
     import: optional:configserver:http://localhost:8888
+  profiles:
+    active: dev
 
 jwt:
   secret: my-super-secret-key-which-should-be-long-enough
