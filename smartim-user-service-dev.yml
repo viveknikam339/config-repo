@@ -1,0 +1,20 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: smartim-user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/smartim_user_db
+    username: root
+    password: Pa$$w0rd
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: dev
+
+jwt:
+  secret: my-super-secret-key-which-should-be-long-enough
+  expiration: 86400000 # 1 day in ms
