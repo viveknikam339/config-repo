@@ -1,2 +1,10 @@
-service:
-  name: service A dev environment
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          timeout: 6
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG
