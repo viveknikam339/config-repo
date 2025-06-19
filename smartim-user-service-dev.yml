@@ -2,6 +2,9 @@ server:
   port: 8085
 
 spring:
+  redis:
+    host: localhost
+    port: 6379
   application:
     name: smartim-user-service
   datasource:
