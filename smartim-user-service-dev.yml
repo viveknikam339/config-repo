@@ -19,3 +19,17 @@ spring:
 jwt:
   secret: a-string-secret-at-least-256-bits-long
   expiration: 86400000 # 1 day in ms
+
+sonar:
+  projectKey: smartim-user-service
+  projectName: Smartim User Service
+  projectVersion: 1.0
+  sources: src/main/java
+  tests: src/test/java
+  language: java
+  java:
+    binaries: target/classes
+  sourceEncoding: UTF-8
+  junit:
+    reportPaths: target/surefire-reports
+  host.url: http://localhost:9000
