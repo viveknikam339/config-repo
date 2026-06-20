@@ -16,6 +16,12 @@ spring:
       ddl-auto: update
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
 jwt:
   secret: a-string-secret-at-least-256-bits-long
   expiration: 86400000 # 1 day in ms
